@@ -11,6 +11,7 @@ var facebook_items = items.reduce(function (acc, item) {
 }, []);
 
 console.log(facebook_items);
+require("./example_function");
 
 if (!window.fbq) {
   !(function (f, b, e, v, n, t, s) {
@@ -30,42 +31,5 @@ if (!window.fbq) {
   })(window, "", "script", "//connect.facebook.net/en_US/fbevents.js");
 }
 
-var awin_item_ids = [];
-var awin_item_quantities = [];
-var awin_item_names = [];
-var awin_item_categories = [];
-var awin_item_prices = [];
-
-var sProductData = items.reduce(function (acc, item) {
-  awin_item_ids.push(item.item_id);
-  awin_item_quantities.push(item.quantity);
-  awin_item_names.push(item.item_name_affiliate);
-  awin_item_categories.push(item.item_main_category);
-  awin_item_prices.push(item.net_price);
-  return (
-    acc +
-    "AW:P|" +
-    "123456" +
-    "|" +
-    "test1234" +
-    "|" +
-    item.item_id +
-    "|" +
-    item.item_brand +
-    ";" +
-    item.item_name +
-    "|" +
-    item.net_price +
-    "|" +
-    item.quantity +
-    "|" +
-    "" +
-    "|" +
-    "gc10" +
-    "|" +
-    item.item_main_category +
-    "\r\n"
-  );
-}, "");
-
-console.log(sProductData);
+var awinProductData = require("./awin");
+console.log(awinProductData());
