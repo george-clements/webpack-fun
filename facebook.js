@@ -1,4 +1,5 @@
 var facebook = function (items) {
+  var window = {};
   if (!window.fbq) {
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) {

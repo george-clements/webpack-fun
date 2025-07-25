@@ -1,5 +1,3 @@
-var window = {};
-
 var items = require("./items");
 
 var facebook = require("./facebook");
