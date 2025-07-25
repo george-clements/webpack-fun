@@ -3,6 +3,8 @@ var awin = require('./awin.js');
 var items =require('./items.json');
 var facebook = require('./facebook.js');
 
+console.log(facebook);
+console.log(items);
 
 if (!window.fbq) {
       !(function (f, b, e, v, n, t, s) {
@@ -21,6 +23,6 @@ if (!window.fbq) {
         n.queue = [];
       })(window, '', "script", "//connect.facebook.net/en_US/fbevents.js");
     }
-    
+
 console.log(awin);
 awin(items);
