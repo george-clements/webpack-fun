@@ -32,4 +32,4 @@ if (!window.fbq) {
 }
 
 var awinProductData = require("./awin");
-console.log(awinProductData());
+awinProductData(items);

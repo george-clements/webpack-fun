@@ -1,4 +1,4 @@
-var awin = function () {
+var awin = function (items) {
   var awin_item_ids = [];
   var awin_item_quantities = [];
   var awin_item_names = [];
