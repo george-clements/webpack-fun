@@ -1,0 +1,19 @@
+{
+  "name": "webpack-fun",
+  "version": "1.0.0",
+  "description": "Webpack playground",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-clements/webpack-fun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/george-clements/webpack-fun/issues"
+  },
+  "homepage": "https://github.com/george-clements/webpack-fun#readme"
+}
