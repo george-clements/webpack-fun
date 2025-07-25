@@ -4,7 +4,8 @@
   "description": "Webpack playground",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,9 @@
   },
   "homepage": "https://github.com/george-clements/webpack-fun#readme",
   "dependencies": {
-    "eslint": "^9.31.0",
+    "eslint": "^9.31.0"
+  },
+  "devDependencies": {
     "webpack": "^5.100.2",
     "webpack-cli": "^6.0.1"
   }
