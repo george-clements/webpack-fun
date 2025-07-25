@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/george-clements/webpack-fun#readme",
   "dependencies": {
-    "eslint": "^9.31.0"
+    "eslint": "^9.31.0",
+    "webpack": "^5.100.2"
   }
 }
