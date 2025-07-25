@@ -1,10 +1,7 @@
 var items = require("./items");
-
 var facebook = require("./facebook");
-
-facebook(items);
-
+var awinProductData = require("./awin");
 require("./example_function");
 
-var awinProductData = require("./awin");
+facebook(items);
 awinProductData(items);
