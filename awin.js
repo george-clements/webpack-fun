@@ -38,7 +38,6 @@ var sProductData = items.reduce(function (acc, item) {
           );
         }, "");
 
-    console.log(sProductData);
         return sProductData
     }
 

@@ -1,16 +1,7 @@
 var window = {};
 var awin = require('./awin.js');
 var items = require('./items.json');
-
-var facebook_items = items.reduce(function(acc, item){
-    acc.push({
-        id: item.item_id,
-        quantity: item.quantity
-    })
-    return acc
-}, []);
-
-console.log(facebook_items);
+var facebook = require('./facebook.js');
 require('./example_function');
 
 if (!window.fbq) {
@@ -30,6 +21,7 @@ if (!window.fbq) {
         n.queue = [];
       })(window, '', "script", "//connect.facebook.net/en_US/fbevents.js");
     }
-  
-console.log(awin);
+
+console.log(JSON.stringify(facebook(items)));
+
 awin(items);
