@@ -5,7 +5,7 @@ var awin = function (items) {
   var awin_item_categories = [];
   var awin_item_prices = [];
 
-  return items.reduce(function (acc, item) {
+  var sProducts = items.reduce(function (acc, item) {
     awin_item_ids.push(item.item_id);
     awin_item_quantities.push(item.quantity);
     awin_item_names.push(item.item_name_affiliate);
@@ -36,6 +36,8 @@ var awin = function (items) {
       "\r\n"
     );
   }, "");
+  console.log(sProducts);
+  return sProducts;
 };
 
 module.exports = awin;
