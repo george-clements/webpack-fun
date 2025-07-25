@@ -37,7 +37,7 @@ var awin = function (items) {
             "\r\n"
         );
     }, "")
-    console.log(sProductData)
+    return sProductData
 }
 
 module.exports = awin;

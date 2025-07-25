@@ -1,20 +1,12 @@
 var window = {};
+var facebook_lib = require("./facebook_lib.js");
+var facebook = require("./facebook.js");
+var awin = require("./awin.js")
 
 var items = require("./items.json")
 
-var facebook_items = items.reduce(function (acc, item) {
-  acc.push({
-    id: item.item_id,
-    quantity: item.quantity
-  })
-  return acc
-}, []);
+facebook_lib(window)
 
-console.log(facebook_items);
+console.log(facebook(items))
 
-if (!window.fbq) {
-  require("./facebook.js")
-}
-
-var awin = require("./awin.js")
-awin(items);
+console.log(awin(items));
