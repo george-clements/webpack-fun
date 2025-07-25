@@ -1,4 +1,4 @@
-var facebook_lib = function (window) {
+var facebook_lib = function () {
     !(function (f, b, e, v, n, t, s) {
         if (f.fbq) {
             return;
