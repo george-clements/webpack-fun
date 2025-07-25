@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/george-clements/webpack-fun/issues"
   },
-  "homepage": "https://github.com/george-clements/webpack-fun#readme"
+  "homepage": "https://github.com/george-clements/webpack-fun#readme",
+  "dependencies": {
+    "eslint": "^9.31.0"
+  }
 }
