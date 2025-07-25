@@ -74,7 +74,7 @@ var awin_item_prices = [];
           return (
             acc +
             "AW:P|" +
-            '1234' +
+            '123456' +
             "|" +
             'test1234' +
             "|" +
