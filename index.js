@@ -2,15 +2,10 @@ var window = {};
 
 var items = require("./items.json");
 
-var facebook_items = items.reduce(function (acc, item) {
-  acc.push({
-    id: item.item_id,
-    quantity: item.quantity,
-  });
-  return acc;
-}, []);
+var facebook = require("./facebook");
 
-console.log(facebook_items);
+facebook(items);
+
 require("./example_function");
 
 if (!window.fbq) {
