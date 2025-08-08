@@ -1,0 +1,28 @@
+{
+  "name": "webpack-fun",
+  "version": "1.0.0",
+  "description": "Having fun with webpack",
+  "homepage": "https://github.com/george-clements/webpack-fun#readme",
+  "bugs": {
+    "url": "https://github.com/george-clements/webpack-fun/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/george-clements/webpack-fun.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack"
+  },
+  "dependencies": {
+    "eslint": "^9.31.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  }
+}

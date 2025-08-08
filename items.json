@@ -1,0 +1,28 @@
+[
+    {
+        "item_name": "Glycolic Acid 7 %",
+        "item_id": "1220479",
+        "item_category": "",
+        "item_brand": "The Ordinary",
+        "item_main_category": "Gesichtswasser (120108)",
+        "item_product_classification": "",
+        "net_price": 10.25,
+        "gross_price": 12.2,
+        "quantity": "1",
+        "item_name_affiliate": "The Ordinary;Glycolic Acid 7 %",
+        "item_type": "PRODUCT"
+    },
+    {
+        "item_name": "Direct Acids",
+        "item_id": "015557",
+        "item_category": "",
+        "item_brand": "The Ordinary",
+        "item_main_category": "Gesichtspeeling (120107)",
+        "item_product_classification": "Pflege / Make-Up",
+        "net_price": 9.08,
+        "gross_price": 10.8,
+        "quantity": "1",
+        "item_name_affiliate": "The Ordinary;Direct Acids",
+        "item_type": "PRODUCT"
+    }
+]
