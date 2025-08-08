@@ -7,6 +7,8 @@ require('../example_function.js');
 console.log(JSON.stringify(facebook(items)));
 
 awin(items);
+dmp.awin = 'test';
+console.log(dmp);
 var emotion = 'fun';
 
 // alert('hello_world');

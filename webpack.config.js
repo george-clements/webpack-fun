@@ -3,7 +3,8 @@
 const path = require('path');
 
 const isProduction = process.env.NODE_ENV === 'production';
-
+const webpack = require("webpack");
+const { EnvironmentPlugin } = require("webpack");
 
 const config = {
     entry: './src/index.js',
@@ -11,6 +12,9 @@ const config = {
         path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
+        new webpack.ProvidePlugin({
+        dmp: path.resolve(__dirname, "src/dmp.js"), // Auto-imports functions in every module
+      })
         // Add your plugins here
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],
