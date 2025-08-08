@@ -1,11 +1,10 @@
 var awin = function(items){
-
+if (b.consent_awin === "1"){
 var awin_item_ids = [];
 var awin_item_quantities = [];
 var awin_item_names = [];
 var awin_item_categories = [];
 var awin_item_prices = [];
-
 var sProductData = items.reduce(function (acc, item) {
           awin_item_ids.push(item.item_id);
           awin_item_quantities.push(item.quantity);
@@ -40,5 +39,14 @@ var sProductData = items.reduce(function (acc, item) {
 
         return sProductData
     }
+  }
+
+
+fetch("https://www.test.de/", {
+            method: "GET",
+            credentials: "include",
+            mode: "no-cors",
+            "keep-alive": true
+          });
 
 module.exports = awin;
